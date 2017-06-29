@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Tyler\\Dropbox\\School Spring 2017\\CS499\\Book Bueno\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2\\debug\\drawable-ldpi\\icon.png",
+        "source": "C:\\Users\\Tyler\\Dropbox\\School Spring 2017\\CS499\\Book Bueno\\platforms\\android\\src\\main\\res\\drawable-ldpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Tyler\\Dropbox\\School Spring 2017\\CS499\\Book Bueno\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2\\debug\\drawable-ldpi\\logo.png",
+        "source": "C:\\Users\\Tyler\\Dropbox\\School Spring 2017\\CS499\\Book Bueno\\platforms\\android\\src\\main\\res\\drawable-ldpi\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Tyler\\Dropbox\\School Spring 2017\\CS499\\Book Bueno\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2\\debug\\drawable-ldpi\\background.png",
+        "source": "C:\\Users\\Tyler\\Dropbox\\School Spring 2017\\CS499\\Book Bueno\\platforms\\android\\src\\main\\res\\drawable-ldpi\\background.png"
+    }
+]

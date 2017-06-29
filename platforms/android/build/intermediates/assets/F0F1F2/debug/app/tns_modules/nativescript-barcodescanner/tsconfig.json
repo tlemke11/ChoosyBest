@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "removeComments": true,
+        "experimentalDecorators": true,
+        "noEmitHelpers": true,
+        "declaration": true,
+        "skipLibCheck": true,
+        "noLib": true
+    },
+    "files": [
+        "manual_typings/base.d.ts",
+        "references.d.ts",
+        "barcodescanner.common.ts",
+        "barcodescanner.android.ts",
+        "barcodescanner.ios.ts"
+    ],
+    "compileOnSave": false,
+    "exclude": [
+        "node_modules",
+        "platforms"
+    ]
+}

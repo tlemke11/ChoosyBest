@@ -1,0 +1,3 @@
+C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\src\main\assets\app\ViewModels\item-view-model.js
+C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\src\main\assets\app\ViewModels\search-view-model.js
+C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\src\main\assets\app\Views\Search\search.js

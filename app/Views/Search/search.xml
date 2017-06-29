@@ -1,0 +1,16 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onPageLoad">
+<Page.actionBar>
+    <ActionBar>
+        <NavigationButton android.systemIcon="ic_menu_back" tap="{{ goBack }}"/>
+        <ActionBar.actionItems>
+            <ActionItem>
+                <ActionItem.ActionView>
+                    <StackLayout>
+                        <SearchBar hint="Enter Movie/Book Title" submit="{{ searchForTitle }}" />
+                    </StackLayout>
+                </ActionItem.ActionView>
+            </ActionItem>
+        </ActionBar.actionItems>
+    </ActionBar>
+</Page.actionBar>
+</Page>

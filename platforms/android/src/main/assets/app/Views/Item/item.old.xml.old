@@ -1,0 +1,23 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onPageLoad">
+
+    <Page.actionBar>
+        <ActionBar title="Book Bueno">
+            <ActionBar.actionItems>
+                <ActionItem tap="search" android.systemIcon="ic_menu_search_holo_light"/>
+                <ActionItem text="Scan UPCd" class="font-awesome" tap="scanIt"/>
+            </ActionBar.actionItems>
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout>
+        <Label class="text-center" text="Book Title - Author - Year"/>
+        <StackLayout orientation="horizontal" >
+            <Label text="ISBN" width="50%" height="auto" backgroundColor = "green"/>
+            <Label text="Bar Code" width="50%" height="auto" backgroundColor = "yellow"/>
+        </StackLayout>
+        <StackLayout orientation="horizontal" >
+            <Image src="{{ mdImg }}" stretch="fill"/>
+            <Label text="Buy Optionss" width="50%" height="25%" backgroundColor = "red"/>
+        </StackLayout>
+        <ListView items="put bound item here"/>
+    </StackLayout>
+</Page>

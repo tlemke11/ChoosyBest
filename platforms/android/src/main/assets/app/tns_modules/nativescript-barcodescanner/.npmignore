@@ -1,0 +1,14 @@
+.idea
+.vscode
+.travis.yml
+build.xcconfig
+demo/
+hooks/
+manual_typings/
+*.gif
+*.jpg
+*.png
+*.log
+*.map
+*.ts
+!*.d.ts

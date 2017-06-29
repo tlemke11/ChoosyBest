@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\com.android.support-appcompat-v7-23.4.0_9a26008c5f0f3e90fddf96100c96248810ebc4a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\com.android.support-support-vector-drawable-23.4.0_849a1b9d11313a35127b3faa95fb41052f80b40e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\com.android.support-design-23.4.0_50985566007e62ecd4b5a2d2db447bb6f7f99de2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\internal_impl-23.4.0_e9955c7495d8e0d43ce13a50b16732a35af945a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\com.android.support-recyclerview-v7-23.4.0_96077c3544d6cdc20b0e52de9b431659cfda989d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\exploded-aar\Common-2017.1.504-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="35d17e8af8b765ad6db33ed0dad10fd3945aec35">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\intermediates-exploded-aar-Common-2017.1.504-dev-release_963b404ace593032f0f5c1a9baa1811595c63c25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\exploded-aar\barcodescanner-release-2.1.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2d4f602a67efec62a1db4e4b2e695e8270fd0a1c">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\intermediates-exploded-aar-barcodescanner-release-2.1.6_1debfaba28221429f820d8960849a0eb016aa18a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\exploded-aar\List-2017.1.504-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="68e4f95c7b18e9879ebfb526a9545ed960ef3190">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\intermediates-exploded-aar-List-2017.1.504-dev-release_9c8288c1fa71fe7eb616f307ac2521e8cc8a5375.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\exploded-aar\BookBueno\runtime\unspecified\jars\libs\binding-generator.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3e74f5f1ebe12c7cfa6591158ef298c95a5275f">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\binding-generator_73c516d28b626b1b4fcd93f892e858c902212c49.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\exploded-aar\widgets-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ed69cd5603304a6fc9a36a94c8be977a1d0e4857">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\intermediates-exploded-aar-widgets-release_033113540bcfcebacedbbe19f736356e2d24ef09.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\exploded-aar\BookBueno\runtime\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8e45d63bd91f9a51a9e6f9c96be7a01deb415690">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\BookBueno-runtime-unspecified_e083ec6ca86e41d5e83ea37bfc7f7bb5de1efeec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\com.android.support-support-v4-23.4.0_3ca52eea5a8ac93e04c439771aeeefbfd2f7cd09.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\exploded-aar\Data-2017.1.504-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b641bfe74a612df8e72181362ec895f8f56f73e">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\intermediates-exploded-aar-Data-2017.1.504-dev-release_b93adaf7fd7ce186ff78c340cb8167f5bd289349.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\exploded-aar\Primitives-2017.1.504-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8370f7dca6cdb1c2b3407855a4c6d481ddd7b0d6">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\intermediates-exploded-aar-Primitives-2017.1.504-dev-release_d8e01c108a068011d9765542411048bc926bc88d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\com.android.support-animated-vector-drawable-23.4.0_9d44c763a0e9687b09d5ba67f860c877ea64d938.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tyler\AppData\Local\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\Tyler\Dropbox\School Spring 2017\CS499\Book Bueno\platforms\android\build\intermediates\pre-dexed\F0F1F2\debug\support-annotations-23.4.0_8c2b031087792198e56f2c9577df8798a3ccbd37.jar" />
+    </item>
+
+</items>

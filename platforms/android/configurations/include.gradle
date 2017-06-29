@@ -1,0 +1,4 @@
+
+android {
+    flavorDimensions "nativescriptbarcodescanner", "nativescripttelerikui", "tnscoremoduleswidgets"
+}

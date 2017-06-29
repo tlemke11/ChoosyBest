@@ -1,0 +1,11 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+      xmlns:shared="Views/Shared"
+      loaded="onPageLoad">
+
+    <Page.actionBar>
+        <shared:main-actionbar />
+    </Page.actionBar>
+    <StackLayout>
+        <Label class="text-center" text="Favorites"></Label>
+    </StackLayout>
+</Page>

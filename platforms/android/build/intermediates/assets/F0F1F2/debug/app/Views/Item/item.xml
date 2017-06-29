@@ -1,0 +1,16 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+      xmlns:shared="Views/Shared"
+      loaded="onPageLoad">
+    <Page.actionBar>
+    <shared:main-actionbar />
+    </Page.actionBar>
+<StackLayout>
+    <Label class="text-center" text="{{ title }}"/>
+    <Label class="text-center" text="{{ author }}"/>
+    <Label class="text-center" text="{{ year }}"/>
+    <Label class="text-center" text="{{ ean }}"/>
+    <Label class="text-center" text="{{ isbn }}"/>
+    <Label class="text-center" text="{{ goodReadsRating }}"/>
+    <Image src="{{ lgImg }}"/>
+</StackLayout>
+</Page>

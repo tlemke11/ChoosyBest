@@ -1,0 +1,133 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-barcodescanner",
+        "scope": null,
+        "escapedName": "nativescript-barcodescanner",
+        "name": "nativescript-barcodescanner",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\Tyler\\Dropbox\\School Spring 2017\\CS499\\Book Bueno"
+    ]
+  ],
+  "_from": "nativescript-barcodescanner@latest",
+  "_id": "nativescript-barcodescanner@2.5.4",
+  "_inCache": true,
+  "_location": "/nativescript-barcodescanner",
+  "_nodeVersion": "6.10.3",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/nativescript-barcodescanner-2.5.4.tgz_1495570607165_0.814531777985394"
+  },
+  "_npmUser": {
+    "name": "eddyverbruggen",
+    "email": "eddyverbruggen@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-barcodescanner",
+    "scope": null,
+    "escapedName": "nativescript-barcodescanner",
+    "name": "nativescript-barcodescanner",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-barcodescanner/-/nativescript-barcodescanner-2.5.4.tgz",
+  "_shasum": "37019f8109a8730540e83fdcede13a07fed1d6a5",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-barcodescanner",
+  "_where": "C:\\Users\\Tyler\\Dropbox\\School Spring 2017\\CS499\\Book Bueno",
+  "author": {
+    "name": "Eddy Verbruggen",
+    "email": "eddyverbruggen@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/eddyverbruggen/nativescript-barcodescanner/issues"
+  },
+  "dependencies": {},
+  "description": "Scan QR/barcodes with a {N} app.",
+  "devDependencies": {
+    "tns-core-modules": "^3.0.0",
+    "tns-platform-declarations": "^3.0.0",
+    "tslint": "^5.0.0",
+    "typescript": "~2.3.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "37019f8109a8730540e83fdcede13a07fed1d6a5",
+    "tarball": "https://registry.npmjs.org/nativescript-barcodescanner/-/nativescript-barcodescanner-2.5.4.tgz"
+  },
+  "gitHead": "dff91cbe914efed7761edc95d2d6b7b431c86a1e",
+  "homepage": "https://github.com/eddyverbruggen/nativescript-barcodescanner",
+  "keywords": [
+    "ecosystem:nativescript",
+    "NativeScript",
+    "Barcode",
+    "Barcode Scanner",
+    "Bulk",
+    "Bulk Scan",
+    "Continuous",
+    "Flashlight",
+    "Torch",
+    "Torch",
+    "Aztec",
+    "Codabar",
+    "Code39",
+    "Code93",
+    "Code128",
+    "Data Matrix",
+    "EAN8",
+    "EAN13",
+    "ITF",
+    "PDF417",
+    "QR",
+    "RSS14",
+    "UPCA",
+    "UPCE"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/eddyverbruggen/nativescript-barcodescanner/blob/master/LICENSE"
+  },
+  "main": "barcodescanner",
+  "maintainers": [
+    {
+      "name": "eddyverbruggen",
+      "email": "eddyverbruggen@gmail.com"
+    }
+  ],
+  "name": "nativescript-barcodescanner",
+  "nativescript": {
+    "platforms": {
+      "android": "2.3.0",
+      "ios": "2.3.0"
+    }
+  },
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddyverbruggen/nativescript-barcodescanner.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "demo.android": "npm run preparedemo && cd demo && tns run android",
+    "demo.ios": "npm run preparedemo && cd demo && tns emulate ios --device \"iPhone 7\"",
+    "demo.ios.device": "npm run preparedemo && cd demo && tns platform remove ios && tns platform add ios && tns run ios",
+    "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-barcodescanner && tns plugin add .. && tns install",
+    "setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd ..",
+    "test": "npm run tslint && npm run tslint.demo && cd demo && tns build ios && tns build android",
+    "tslint": "tslint *.ts",
+    "tslint.demo": "tslint demo/app/*.ts"
+  },
+  "version": "2.5.4"
+}
