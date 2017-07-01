@@ -9,7 +9,7 @@ exports.getItemByBarcode = function(id) {
     console.log("initializing TylerLemke.me API");
     //returning the promise here -
     // https://stackoverflow.com/questions/44480042/update-a-view-model-from-a-json-response-in-an-externally-required-module-plugin
-    return fetchModule.fetch("http://tylerlemke.me/bookbueno/public/api/v1/book/title/"+id, {
+    return fetchModule.fetch("http://tylerlemke.me/choosybest/public/api/v1/item/barcode/"+id, {
             method: 'GET'
         })
             .then(function(response){
@@ -18,7 +18,7 @@ exports.getItemByBarcode = function(id) {
                     }
                 , function(error){
                     console.log('error in book api request');
-                    console.log('http://tylerlemke.me/bookbueno/public/api/v1/book/title/'+id);
+                    console.log('http://tylerlemke.me/choosybest/public/api/v1/item/barcode/'+id);
                     console.log(error);
                 })
 };

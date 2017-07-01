@@ -9,7 +9,7 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="BookBueno Server">
+      <paths name="ChoosyBest Server">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
