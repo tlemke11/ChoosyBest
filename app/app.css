@@ -18,6 +18,11 @@ button {
     border-width: 1;
 }
 
+.scrollView {
+    width:100%;
+    height:100%;
+}
+
 
 /*
 In many cases you may want to use the NativeScript core theme instead

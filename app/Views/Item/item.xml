@@ -1,16 +1,19 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd"
-      xmlns:shared="Views/Shared"
+<Page xmlns:shared="Views/Shared"
+      xmlns="http://schemas.nativescript.org/tns.xsd"
       loaded="onPageLoad">
     <Page.actionBar>
-    <shared:main-actionbar />
+        <shared:main-actionbar/>
     </Page.actionBar>
-<StackLayout>
-    <Label class="text-center" text="{{ title }}"/>
-    <Label class="text-center" text="{{ author }}"/>
-    <Label class="text-center" text="{{ year }}"/>
-    <Label class="text-center" text="{{ ean }}"/>
-    <Label class="text-center" text="{{ isbn }}"/>
-    <Label class="text-center" text="{{ goodReadsRating }}"/>
-    <Image src="{{ lgImg }}"/>
-</StackLayout>
+    <ScrollView class="scrollView">
+        <StackLayout>
+            <Label class="text-center" text="{{ title }}"/>
+            <Label class="text-center" text="{{ author || actors }}"/>
+            <Label class="text-center" text="{{ year || releaseDate }}"/>
+            <Label class="text-center" text="{{ ean || rating}}"/>
+            <Label class="text-center" text="{{ isbn || upc }}"/>
+            <Image src="{{ lgImg }}"/>
+            <Label class="text-center" text="{{ reviewsIFrame }}"/>
+            <WebView src="{{ reviewsIFrame }}"/>
+        </StackLayout>
+    </ScrollView>
 </Page>

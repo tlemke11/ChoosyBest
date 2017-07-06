@@ -1,4 +1,5 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onPageLoad">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+      xmlns:lv="nativescript-telerik-ui/listview" loaded="onPageLoad">
 <Page.actionBar>
     <ActionBar>
         <NavigationButton android.systemIcon="ic_menu_back" tap="{{ goBack }}"/>
@@ -13,4 +14,15 @@
         </ActionBar.actionItems>
     </ActionBar>
 </Page.actionBar>
+        <lv:RadListView items="none" >
+
+            <lv:RadListView.itemTemplate>
+                <StackLayout orientation="vertical">
+                    <Label fontSize="20" text="text"/>
+
+                    <Label fontSize="14" text="test"/>
+
+                </StackLayout>
+            </lv:RadListView.itemTemplate>
+        </lv:RadListView>
 </Page>

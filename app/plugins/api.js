@@ -7,37 +7,48 @@ var fetchModule = require('fetch');
 exports.getItemByBarcode = function(id) {
 
     console.log("initializing TylerLemke.me API");
+    console.log("initialize Get By Barcode API");
+
     //returning the promise here -
     // https://stackoverflow.com/questions/44480042/update-a-view-model-from-a-json-response-in-an-externally-required-module-plugin
     return fetchModule.fetch("http://tylerlemke.me/choosybest/public/api/v1/item/barcode/"+id, {
             method: 'GET'
         })
+
+        //TODO -
+        //https://www.tjvantoll.com/2015/09/13/fetch-and-errors/
+        //implement proper catching and create generic error handling function (see avove
             .then(function(response){
-                    console.log('returning response' + JSON.stringify(response))
+                    //console.log('returning responsessss' + JSON.stringify(response));
+                console.log(response.status);
                 return response;
-                    }
-                , function(error){
+                    })
+        .catch(function(error){
                     console.log('error in book api request');
-                    console.log('http://tylerlemke.me/choosybest/public/api/v1/item/barcode/'+id);
                     console.log(error);
                 })
 };
 
 exports.getItemByTitle = function(title) {
 
-    console.log("initialize Get By Title");
-    //returning the promise here -
-    // https://stackoverflow.com/questions/44480042/update-a-view-model-from-a-json-response-in-an-externally-required-module-plugin
-/*    return fetchModule.fetch("http://tylerlemke.me/bookbueno/public/api/v1/book/title/"+title, {
+    console.log("initializing TylerLemke.me API");
+    console.log("initialize Get By Title API");
+    return fetchModule.fetch("http://tylerlemke.me/choosybest/public/api/v1/item/barcode?title="+title, {
         method: 'GET'
     })
+
+    //TODO -
+    //https://www.tjvantoll.com/2015/09/13/fetch-and-errors/
+    //implement proper catching and create generic error handling function (see avove
         .then(function(response){
-                console.log('returning response' + JSON.stringify(response))
-                return response;
-            }
-            , function(error){
-                console.log('error in book api request');
-                console.log('http://tylerlemke.me/bookbueno/public/api/v1/book/title/'+id);
-                console.log(error);
-            })*/
+            console.log("http://tylerlemke.me/choosybest/public/api/v1/item/barcode?title="+title);
+            //console.log('returning responsessss' + JSON.stringify(response));
+            console.log(response.status);
+            return response;
+        })
+        .catch(function(error){
+            console.log('error in book api request');
+            console.log(error);
+        })
+
 };

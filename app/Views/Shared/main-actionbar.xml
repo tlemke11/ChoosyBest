@@ -1,8 +1,9 @@
 
-    <ActionBar title="Book Bueno">
-    <Button text="&#xf0c9;" class="font-awesome" tap="{{ scanIt }}"/>
+    <ActionBar>
+    <Button text="&#xf0c9;" class="font-awesome" tap=""/>
     <ActionBar.actionItems>
-        <ActionItem tap="{{  loadSearchView }}" android.systemIcon="ic_menu_search_holo_light" />
-        <ActionItem text="UPC" class="font-awesome" tap="{{ scanIt }}"/>
+        <ActionItem tap="loadSearchView" android.systemIcon="ic_menu_search_holo_light" />
+        <ActionItem text="UPC" class="font-awesome" tap="loadItemView" />
+        <ActionItem text="Share" class="font-awesome" tap="share" />
     </ActionBar.actionItems>
     </ActionBar>
