@@ -19,7 +19,7 @@ exports.getItemByBarcode = function(id) {
         //https://www.tjvantoll.com/2015/09/13/fetch-and-errors/
         //implement proper catching and create generic error handling function (see avove
             .then(function(response){
-                    //console.log('returning responsessss' + JSON.stringify(response));
+                    console.log('returning responsessss' + JSON.stringify(response));
                 console.log(response.status);
                 return response;
                     })

@@ -13,7 +13,7 @@ itemViewModel.title = "";
 itemViewModel.author = "";
 itemViewModel.year = "";
 itemViewModel.isbn = "";
-itemViewModel.ean = "";
+itemViewModel.asin = "";
 itemViewModel.smImg = "";
 itemViewModel.mdImg = "";
 itemViewModel.lgImg = "";
@@ -58,7 +58,7 @@ itemViewModel.scanIt = function() {
             itemViewModel.set("year", "");
             itemViewModel.set("author", "");
             itemViewModel.set("isbn", "");
-            itemViewModel.set("ean", "");
+            itemViewModel.set("asin", "");
             itemViewModel.set("smImg", "");
             itemViewModel.set("mdImg", "");
             itemViewModel.set("lgImg", "");
@@ -86,7 +86,7 @@ itemViewModel.scanIt = function() {
                             itemViewModel.set("year", response.year);
                             itemViewModel.set("author", response.author);
                             itemViewModel.set("isbn", response.isbn);
-                            itemViewModel.set("ean", response.ean);
+                            itemViewModel.set("asin", response.asin);
                             itemViewModel.set("smImg", response.smImg);
                             itemViewModel.set("mdImg", response.mdImg);
                             itemViewModel.set("lgImg", response.lgImg);

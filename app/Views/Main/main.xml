@@ -1,11 +1,21 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd"
       xmlns:shared="Views/Shared"
+      xmlns:list="nativescript-telerik-ui/listview"
       loaded="onPageLoad">
-
     <Page.actionBar>
         <shared:main-actionbar />
     </Page.actionBar>
-    <StackLayout>
-        <Label class="text-center" text="Favorites"></Label>
-    </StackLayout>
+    <list:RadListView id="favorites-list">
+
+        <list:RadListView.itemTemplate>
+        <StackLayout>
+            <GridLayout rows="80" columns="1*,2*,1*" marginBottom="10">
+                <Image src="{{ image }}" row="0" col="0"/>
+                <Label row="0" col="1" class="text-center" text="{{ name }}" id = "{{ asin }}" verticalAlignment="center" textWrap="true"></Label>
+                <Button row ="0" col="2" text="View"></Button>
+            </GridLayout>
+
+        </StackLayout>
+        </list:RadListView.itemTemplate>
+    </list:RadListView>
 </Page>

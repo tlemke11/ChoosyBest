@@ -11,7 +11,7 @@ searchViewModel.title = "";
 searchViewModel.author = "";
 searchViewModel.year = "";
 searchViewModel.isbn = "";
-searchViewModel.ean = "";
+searchViewModel.asin = "";
 searchViewModel.smImg = "";
 
 searchViewModel.goodReadsRating = "";

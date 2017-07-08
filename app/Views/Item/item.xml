@@ -6,6 +6,7 @@
     </Page.actionBar>
     <ScrollView class="scrollView">
         <StackLayout>
+            <Button text="Add to Favorites" tap="addToBookmarks" />
             <Label class="text-center" text="{{ title }}"/>
             <Label class="text-center" text="{{ author || actors }}"/>
             <Label class="text-center" text="{{ year || releaseDate }}"/>
