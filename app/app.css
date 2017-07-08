@@ -23,7 +23,7 @@ selectors and properties you can use to style UI components.*/
 
 button {
     background-color: #ffa331;
-    /* complementary color #318dff  http://www.colorhexa.com/318dff*/
+    /* complementary color #318dff  http://www.colorhexa.com/318dff     and #3c31ff as third color            */
 }
 
 .scrollView {
