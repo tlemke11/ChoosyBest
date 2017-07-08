@@ -8,7 +8,7 @@
 android {  
   defaultConfig {  
     generatedDensities = []
-    applicationId = "org.nativescript.BookBueno" 
+    applicationId = "org.nativescript.BookBuenos"
     
     //override supported platforms
     // ndk {

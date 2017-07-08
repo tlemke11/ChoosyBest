@@ -26,6 +26,10 @@ button {
     /* complementary color #318dff  http://www.colorhexa.com/318dff     and #3c31ff as third color            */
 }
 
+ActionBar {
+    background-color: #ffa331;
+}
+
 .scrollView {
     width:100%;
     height:100%;

@@ -1,9 +1,11 @@
-
-    <ActionBar>
-    <Button text="&#xf0c9;" class="font-awesome no-button-border" tap="loadMainView"/>
+<ActionBar>
+    <android>
+        <NavigationButton icon="res://ic_menu_black_24dp"/>
+    </android>
     <ActionBar.actionItems>
-        <ActionItem tap="loadSearchView" android.systemIcon="ic_menu_search_holo_light" />
-        <ActionItem text="UPC" class="font-awesome" tap="loadItemView" />
-        <ActionItem text="Share" class="font-awesome" tap="share" />
+        <ActionItem text="Favs" tap="loadMainView" android.systemIcon="ic_menu_star" visibility="collapsed" id="star-icon"/>
+        <ActionItem text="Scan" class="font-awesome" tap="loadItemView" icon="res://ic_barcode_black_24dp"/>
+        <ActionItem text="Search" tap="loadSearchView" android.systemIcon="ic_menu_search"/>
+        <ActionItem text="Share" class="font-awesome" tap="share" android.systemIcon="ic_menu_share"/>
     </ActionBar.actionItems>
-    </ActionBar>
+</ActionBar>
