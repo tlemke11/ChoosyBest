@@ -8,7 +8,10 @@ function onPageLoad (data) {
     var page = data.object;
  console.log("item page loaded");
  page.bindingContext = itemVm.itemViewModel;
-
+if (page.navigationContext.id != null){
+    //get load the api and stuff!
+    itemVm.itemViewModel.getIt(page.navigationContext.id);
+}
 }
 
 //scan it function - bind to this
@@ -34,4 +37,4 @@ exports.loadMainView = function () {
 // if you don't wrap the code below in a function, this automatically gets loaded when item.js gets called. This is a
 //common error that I am sure many coders will run into.
 exports.addToBookmarks = function(){
-storage.addToBookmarks(itemVm.itemViewModel.asin, itemVm.itemViewModel.title, itemVm.itemViewModel.smImg) };
+storage.addToBookmarks(itemVm.itemViewModel.asin, itemVm.itemViewModel.title, itemVm.itemViewModel.smImg)};

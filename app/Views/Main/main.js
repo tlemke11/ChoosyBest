@@ -15,6 +15,7 @@ function onPageLoad (data) {
     favsVm.favoritesViewModel.loadBookmarks();
     favoritesList.items = favsVm.favoritesViewModel.favList;
     console.log(favoritesList.items);
+
 }
 
 //TODO - Extremely hard time refactoring this seciton - need to move out but have not found a great way to do it.
@@ -27,6 +28,19 @@ exports.loadItemView = function () {
     frameModule.topmost().navigate('Views/Item/item');
     itemVm.itemViewModel.scanIt();
 };
+exports.loadItem = function (args) {
+
+    var nav = {
+        moduleName:'Views/Item/item',
+        context:{id:args.object.asin}
+    };
+    frameModule.topmost().navigate(nav);
+};
+
+/*https://github.com/NativeScript/NativeScript/issues/594
+exports.buttonLoaded = function(args) {
+    args.object.android.setFocusable(false);
+};*/
 
 exports.loadMainView = function () {
     frameModule.topmost().navigate('Views/Main/main');

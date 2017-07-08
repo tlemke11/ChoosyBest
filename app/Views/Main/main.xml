@@ -11,10 +11,9 @@
         <StackLayout>
             <GridLayout rows="80" columns="1*,2*,1*" marginBottom="10">
                 <Image src="{{ image }}" row="0" col="0"/>
-                <Label row="0" col="1" class="text-center" text="{{ name }}" id = "{{ asin }}" verticalAlignment="center" textWrap="true"></Label>
-                <Button row ="0" col="2" text="View"></Button>
+                <Label row="0" col="1" class="text-center" text="{{ name }}" verticalAlignment="center" textWrap="true"></Label>
+                <Button row ="0" col="2" text="View" tap="loadItem" asin="{{ asin }}"/>
             </GridLayout>
-
         </StackLayout>
         </list:RadListView.itemTemplate>
     </list:RadListView>

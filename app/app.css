@@ -21,6 +21,11 @@ selectors and properties you can use to style UI components.*/
     margin:0px;
 }
 
+button {
+    background-color: #ffa331;
+    /* complementary color #318dff  http://www.colorhexa.com/318dff*/
+}
+
 .scrollView {
     width:100%;
     height:100%;

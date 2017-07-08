@@ -54,19 +54,7 @@ itemViewModel.scanIt = function() {
             // return getIt.response();
 
             //TODO - this should all be in scan.js but I can't get it to work
-            itemViewModel.set("title", "Loading... Please wait");
-            itemViewModel.set("year", "");
-            itemViewModel.set("author", "");
-            itemViewModel.set("isbn", "");
-            itemViewModel.set("asin", "");
-            itemViewModel.set("smImg", "");
-            itemViewModel.set("mdImg", "");
-            itemViewModel.set("lgImg", "");
-            itemViewModel.set("actors", "");
-            itemViewModel.set("reviewsIFrame", "");
-            itemViewModel.set("rating", "");
-            itemViewModel.set("upc", "");
-            itemViewModel.set("releaseDate", "");
+            clearModel();
 
             //fetchModule.fetch("http://tylerlemke.me/bookbueno/public/api/v1/book/title/" + result.text, {
             //method: 'GET' })
@@ -82,19 +70,7 @@ itemViewModel.scanIt = function() {
 
                             response = JSON.parse(response._bodyInit);
                             console.log("got to second then statement in itemviewmodel" + JSON.stringify(response));
-                            itemViewModel.set("title", response.title);
-                            itemViewModel.set("year", response.year);
-                            itemViewModel.set("author", response.author);
-                            itemViewModel.set("isbn", response.isbn);
-                            itemViewModel.set("asin", response.asin);
-                            itemViewModel.set("smImg", response.smImg);
-                            itemViewModel.set("mdImg", response.mdImg);
-                            itemViewModel.set("lgImg", response.lgImg);
-                            itemViewModel.set("actors", response.actors);
-                            itemViewModel.set("reviewsIFrame", response.reviewsIFrame);
-                            itemViewModel.set("rating", response.rating);
-                            itemViewModel.set("upc", response.upc);
-                            itemViewModel.set("releaseDate", response.releaseDate);
+                            setModelValues(response);
                         }
                     }
                     , function (error) {
@@ -104,6 +80,66 @@ itemViewModel.scanIt = function() {
                     });
         });
 };
+
+itemViewModel.getIt = function(id) {
+    clearModel();
+    getIt.getItemByBarcode(id).then(function (response) {
+            //console.log("got to second then statement in itemviewmodel" + JSON.stringify(response));      //console.log("got to second then statement in itemviewmodel" + response);
+
+            console.log(response.status + "here is the status");
+
+            if (response.status !== 200){
+                itemViewModel.set("title", "Error with Fetching Data, Please Try Title Search");
+            } else {
+
+                response = JSON.parse(response._bodyInit);
+                console.log("got to second then statement in itemviewmodel" + JSON.stringify(response));
+                setModelValues(response);
+            }
+        }
+        , function (error) {
+            console.log('error in book api request');
+            console.log('http://tylerlemke.me/bookbueno/public/api/v1/book/title/' + id);
+            console.log(error);
+        });
+};
+
+function clearModel(){
+    itemViewModel.set("title", "");
+    itemViewModel.set("year", "");
+    itemViewModel.set("author", "");
+    itemViewModel.set("isbn", "");
+    itemViewModel.set("asin", "");
+    itemViewModel.set("smImg", "");
+    itemViewModel.set("mdImg", "");
+    itemViewModel.set("lgImg", "");
+    itemViewModel.set("actors", "");
+    itemViewModel.set("reviewsIFrame", "");
+    itemViewModel.set("rating", "");
+    itemViewModel.set("upc", "");
+    itemViewModel.set("releaseDate", "");
+    itemViewModel.set("addButtonVisibility", 'collapsed');
+    itemViewModel.set("addButtonVisibility", 'visible');
+}
+
+function setModelValues(response){
+    itemViewModel.set("title", response.title);
+    itemViewModel.set("year", response.year);
+    itemViewModel.set("author", response.author);
+    itemViewModel.set("isbn", response.isbn);
+    itemViewModel.set("asin", response.asin);
+    itemViewModel.set("smImg", response.smImg);
+    itemViewModel.set("mdImg", response.mdImg);
+    itemViewModel.set("lgImg", response.lgImg);
+    itemViewModel.set("actors", response.actors);
+    itemViewModel.set("reviewsIFrame", response.reviewsIFrame);
+    itemViewModel.set("rating", response.rating);
+    itemViewModel.set("upc", response.upc);
+    itemViewModel.set("releaseDate", response.releaseDate);
+    itemViewModel.set("addButtonVisibility", 'visible');
+    itemViewModel.set("disableLoad", 'collapsed');
+}
+
 exports.itemViewModel = itemViewModel;
 
 

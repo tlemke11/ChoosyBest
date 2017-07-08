@@ -6,14 +6,22 @@
     </Page.actionBar>
     <ScrollView class="scrollView">
         <StackLayout>
-            <Button text="Add to Favorites" tap="addToBookmarks" />
-            <Label class="text-center" text="{{ title }}"/>
-            <Label class="text-center" text="{{ author || actors }}"/>
-            <Label class="text-center" text="{{ year || releaseDate }}"/>
-            <Label class="text-center" text="{{ ean || rating}}"/>
-            <Label class="text-center" text="{{ isbn || upc }}"/>
-            <Image src="{{ lgImg }}"/>
-            <Label class="text-center" text="{{ reviewsIFrame }}"/>
+            <Label class="text-center font-weight-bold" text="Loading... Please Wait." textWrap="true" visibility="{{ disableLoad }}"/>
+            <GridLayout rows="150" columns="2*,3*">
+                <Image col="0" src="{{ mdImg }}"/>
+                <StackLayout col="1">
+                    <Label class="text-center font-weight-bold" text="{{ title }}" textWrap="true"/>
+                    <Label text="{{ author ? 'Author: ' + author : actors ? 'Actors: ' + actors : ''}}" textWrap="true"/>
+                    <Label text="{{ (year || realeaseDated) ? 'Released: ' + (year || releaseDate) : '' }}" textWrap="true"/>
+                    <Label text="{{ rating ? 'Rating: ' + rating : '' }}" textWrap="true"/>
+                </StackLayout>
+            </GridLayout>
+            <GridLayout rows="40" columns="1*,1*,1*">
+                <Button col="0" text="price one" textWrap="true"/>
+                <Button col="1" text="price 2" textWrap="true"/>
+                <Button col="2" text="price 3" textWrap="true"/>
+            </GridLayout>
+            <Button text="Add to Favorites" tap="addToBookmarks" visibility="{{ addButtonVisibility }}"  />
             <WebView src="{{ reviewsIFrame }}"/>
         </StackLayout>
     </ScrollView>
