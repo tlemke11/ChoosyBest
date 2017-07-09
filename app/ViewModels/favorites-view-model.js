@@ -23,7 +23,6 @@ favoritesViewModel.loadBookmarks = function(){
     //don't need to do has own properties check
     for (var i in bookmarks){
         if(bookmarks.hasOwnProperty(i)){
-
             bookmarks[i].asin = i;
             bookmarksArray.push(bookmarks[i]);
         }

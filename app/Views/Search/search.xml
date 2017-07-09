@@ -1,8 +1,8 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd"
-      xmlns:lv="nativescript-telerik-ui/listview" loaded="onPageLoad">
+      xmlns:list="nativescript-telerik-ui/listview" loaded="onPageLoad">
 <Page.actionBar>
     <ActionBar>
-        <NavigationButton android.systemIcon="ic_menu_back" tap="{{ goBack }}"/>
+        <NavigationButton android.systemIcon="ic_menu_back" tap="loadPrevious"/>
         <ActionBar.actionItems>
             <ActionItem>
                 <ActionItem.ActionView>
@@ -14,15 +14,15 @@
         </ActionBar.actionItems>
     </ActionBar>
 </Page.actionBar>
-        <lv:RadListView items="none" >
-
-            <lv:RadListView.itemTemplate>
-                <StackLayout orientation="vertical">
-                    <Label fontSize="20" text="text"/>
-
-                    <Label fontSize="14" text="test"/>
-
-                </StackLayout>
-            </lv:RadListView.itemTemplate>
-        </lv:RadListView>
+    <list:RadListView id="search-list">
+        <list:RadListView.itemTemplate>
+            <StackLayout>
+                <GridLayout rows="80" columns="1*,2*,1*" marginBottom="10">
+                    <Image src="{{ smImg || mdImg || lgImg }}" row="0" col="0"/>
+                    <Label row="0" col="1" class="text-center" text="{{ title }}" verticalAlignment="center" textWrap="true"></Label>
+                    <Button row ="0" col="2" text="View" tap="loadItem" asin="{{ asin }}"/>
+                </GridLayout>
+            </StackLayout>
+        </list:RadListView.itemTemplate>
+    </list:RadListView>
 </Page>

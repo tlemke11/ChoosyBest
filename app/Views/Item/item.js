@@ -4,12 +4,17 @@
 var itemVm = require("../../ViewModels/item-view-model.js");
 var frameModule = require('ui/frame');
 var storage = require("../../plugins/storage.js");
+var alreadyLoaded = false;
+
 function onPageLoad (data) {
     var page = data.object;
  console.log("item page loaded");
  page.bindingContext = itemVm.itemViewModel;
-if (page.navigationContext.id != null){
+if (page.navigationContext != null && !(alreadyLoaded)){
     //get load the api and stuff!
+    //TODO - the alreadyLoaded below fixes refreshing when the app is reloaded,
+    //but it also breaks loading new data when using the listViews
+    //alreadyLoaded = true;
     itemVm.itemViewModel.getIt(page.navigationContext.id);
 }
 }

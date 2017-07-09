@@ -3,6 +3,7 @@
  */
 console.log("imported api file");
 var fetchModule = require('fetch');
+var dialog = require('ui/dialogs');
 //This code is modified from https://www.npmjs.com/package/nativescript-barcodescanner
 exports.getItemByBarcode = function(id) {
 
@@ -12,7 +13,7 @@ exports.getItemByBarcode = function(id) {
     //returning the promise here -
     // https://stackoverflow.com/questions/44480042/update-a-view-model-from-a-json-response-in-an-externally-required-module-plugin
     return fetchModule.fetch("http://tylerlemke.me/choosybest/public/api/v1/item/barcode/"+id, {
-            method: 'GET'
+            method: 'GET', timeout: 8000
         })
 
         //TODO -
@@ -25,6 +26,11 @@ exports.getItemByBarcode = function(id) {
                     })
         .catch(function(error){
                     console.log('error in book api request');
+                    var options = {
+                        title: "Error",
+                        message: "Please check your internet connection",
+                        okButtonText: "Ok"};
+                    dialog.confirm(options);
                     console.log(error);
                 })
 };
@@ -48,6 +54,11 @@ exports.getItemByTitle = function(title) {
         })
         .catch(function(error){
             console.log('error in book api request');
+            var options = {
+                title: "Error",
+                message: "Please check your internet connection",
+                okButtonText: "Ok"};
+            dialog.confirm(options);
             console.log(error);
         })
 
