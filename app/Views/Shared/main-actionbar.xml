@@ -3,7 +3,7 @@
         <NavigationButton icon="res://ic_menu_black_24dp"/>
     </android>
     <ActionBar.actionItems>
-        <ActionItem text="Favs" tap="loadMainView" android.systemIcon="ic_menu_star" visibility="collapsed" id="star-icon"/>
+        <ActionItem text="Favs" tap="loadMainView" android.systemIcon="ic_menu_star" visibility="collapsed" id="fav-icon"/>
         <ActionItem text="Scan" class="font-awesome" tap="loadItemView" icon="res://ic_barcode_black_24dp"/>
         <ActionItem text="Search" tap="loadSearchView" android.systemIcon="ic_menu_search"/>
         <ActionItem text="Share" class="font-awesome" tap="share" android.systemIcon="ic_menu_share"/>

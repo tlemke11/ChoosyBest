@@ -16,6 +16,9 @@ function onPageLoad (data) {
     favoritesList.items = favsVm.favoritesViewModel.favList;
     console.log(favoritesList.items);
 
+    var favIcon = view.getViewById(page, "fav-icon");
+    favIcon.visibility = "collapsed";
+
 }
 
 //TODO - Extremely hard time refactoring this seciton - need to move out but have not found a great way to do it.

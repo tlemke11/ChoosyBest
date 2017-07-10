@@ -4,6 +4,7 @@
 var itemVm = require("../../ViewModels/item-view-model.js");
 var frameModule = require('ui/frame');
 var storage = require("../../plugins/storage.js");
+var view = require('ui/core/view');
 var alreadyLoaded = false;
 
 function onPageLoad (data) {
@@ -17,6 +18,9 @@ if (page.navigationContext != null && !(alreadyLoaded)){
     //alreadyLoaded = true;
     itemVm.itemViewModel.getIt(page.navigationContext.id);
 }
+    var favIcon = view.getViewById(page, "fav-icon");
+    favIcon.visibility = "visible";
+
 }
 
 //scan it function - bind to this

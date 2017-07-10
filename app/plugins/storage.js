@@ -18,6 +18,10 @@ setBookmarks = function(bookmarksJSON) {
 };
 
 addToBookmarks = function(asin, name, imgLink){
+    if(asin == '' || name == ''){
+        removeFromBookmarks(asin);
+        return;
+    }
     var bookmarks = getBookmarks();
     if(bookmarks[asin] == null) {
         bookmarks[asin] = {
