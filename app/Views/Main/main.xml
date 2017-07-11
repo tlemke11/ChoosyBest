@@ -5,8 +5,6 @@
     <Page.actionBar>
         <shared:main-actionbar />
     </Page.actionBar>
-    <ScrollView class="scrollView">
-
     <list:RadListView id="favorites-list">
         <list:RadListView.itemTemplate>
         <StackLayout>
@@ -18,5 +16,4 @@
         </StackLayout>
         </list:RadListView.itemTemplate>
     </list:RadListView>
-    </ScrollView>
 </Page>
