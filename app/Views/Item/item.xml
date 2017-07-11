@@ -23,6 +23,7 @@
             <Button text="Buy on Amazon" tap="openAmazonUrl" url="{{ detailPageUrl }}" visibility="{{buyButtonVisibility}}" id="amazon-url" />
             <Button text="Add to Favorites" tap="addToBookmarks" visibility="{{ addButtonVisibility }}"  />
             <Button class="dark-button" text="Remove from Favorites" tap="removeFromBookmarks" visibility="{{ removeButtonVisibility }}"  />
+            <Button text="Open Common Sense Media" tap="openCommonSenseMedia" visibility="{{commonSenseButtonVisibility}}" id="amazon-url" />
             <WebView src="{{ reviewsIFrame }}"/>
         </StackLayout>
     </ScrollView>

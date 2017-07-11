@@ -25,6 +25,7 @@ itemViewModel.releaseDate = "";
 itemViewModel.addButtonVisibility = "collapsed";
 itemViewModel.removeButtonVisibility = "collapsed";
 itemViewModel.buyButtonVisibility = "collapsed";
+itemViewModel.commonSenseButtonVisibility = "collapsed";
 itemViewModel.upc = "";
 itemViewModel.newPrice = "";
 itemViewModel.usedPrice = "";
@@ -128,6 +129,7 @@ function clearModel(){
     itemViewModel.set("addButtonVisibility", 'collapsed');
     itemViewModel.set("removeButtonVisibility", 'collapsed');
     itemViewModel.set("buyButtonVisibility", 'collapsed');
+    itemViewModel.set("commonSenseButtonVisibility", 'collapsed');
     itemViewModel.set("newPrice",  "");
     itemViewModel.set("usedPrice", "");
     itemViewModel.set("detailPageUrl", "");
@@ -154,6 +156,7 @@ function setModelValues(response){
         itemViewModel.set("addButtonVisibility", 'visible');
         itemViewModel.set("removeButtonVisibility", 'collapsed');
     }
+    itemViewModel.set("commonSenseButtonVisibility", 'visible');
     itemViewModel.set("buyButtonVisibility", 'visible');
     itemViewModel.set("disableLoad", 'collapsed');
     itemViewModel.set("newPrice",  response.newPrice);

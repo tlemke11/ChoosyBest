@@ -49,6 +49,11 @@ exports.openAmazonUrl = function () {
     utils.openUrl(amazonUrl.url);
 };
 
+exports.openCommonSenseMedia = function () {
+    var itemTitle = encodeURIComponent(itemVm.itemViewModel.title);
+    utils.openUrl("https://www.commonsensemedia.org/search/"+itemTitle);
+};
+
 exports.removeFromBookmarks = function() {
     storage.removeFromBookmarks(itemVm.itemViewModel.asin);
     console.log(itemVm.itemViewModel.asin);
