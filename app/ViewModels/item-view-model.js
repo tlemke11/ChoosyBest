@@ -22,6 +22,9 @@ itemViewModel.actors = "";
 itemViewModel.rating = "";
 itemViewModel.releaseDate = "";
 itemViewModel.upc = "";
+itemViewModel.newPrice = "";
+itemViewModel.usedPrice = ""
+itemViewModel.detailPageUrl = "";
 
 console.log("imported the Item View Model");
 console.log(itemViewModel);
@@ -120,6 +123,9 @@ function clearModel(){
     itemViewModel.set("releaseDate", "");
     itemViewModel.set("addButtonVisibility", 'collapsed');
     itemViewModel.set("addButtonVisibility", 'visible');
+    itemViewModel.set("newPrice",  "");
+    itemViewModel.set("usedPrice", "");
+    itemViewModel.set("detailPageUrl", "");
 }
 
 function setModelValues(response){
@@ -138,6 +144,9 @@ function setModelValues(response){
     itemViewModel.set("releaseDate", response.releaseDate);
     itemViewModel.set("addButtonVisibility", 'visible');
     itemViewModel.set("disableLoad", 'collapsed');
+    itemViewModel.set("newPrice",  response.newPrice);
+    itemViewModel.set("usedPrice", response.usedPrice);
+    itemViewModel.set("detailPageUrl", response.detailPageUrl);
 }
 
 exports.itemViewModel = itemViewModel;

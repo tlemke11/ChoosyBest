@@ -5,8 +5,9 @@ var itemVm = require("../../ViewModels/item-view-model.js");
 var frameModule = require('ui/frame');
 var storage = require("../../plugins/storage.js");
 var view = require('ui/core/view');
+var utils = require('utils/utils');
 var alreadyLoaded = false;
-
+var amazonUrl = '';
 function onPageLoad (data) {
     var page = data.object;
  console.log("item page loaded");
@@ -19,6 +20,7 @@ if (page.navigationContext != null && !(alreadyLoaded)){
     itemVm.itemViewModel.getIt(page.navigationContext.id);
 }
     var favIcon = view.getViewById(page, "fav-icon");
+    amazonUrl = view.getViewById(page, "amazon-url");
     favIcon.visibility = "visible";
 
 }
@@ -41,6 +43,10 @@ exports.loadMainView = function () {
 };
 //End todo
 
+exports.openAmazonUrl = function () {
+    console.log(amazonUrl.url);
+    utils.openUrl(amazonUrl.url);
+};
 
 //BLOG
 // if you don't wrap the code below in a function, this automatically gets loaded when item.js gets called. This is a

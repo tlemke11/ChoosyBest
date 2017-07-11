@@ -16,11 +16,11 @@
                     <Label text="{{ rating ? 'Rating: ' + rating : '' }}" textWrap="true"/>
                 </StackLayout>
             </GridLayout>
-            <GridLayout rows="40" columns="1*,1*,1*">
-                <Button col="0" text="price one" textWrap="true"/>
-                <Button col="1" text="price 2" textWrap="true"/>
-                <Button col="2" text="price 3" textWrap="true"/>
+            <GridLayout rows="40" columns="1*,1*">
+                <Label class="text-center" col="0" text="{{ newPrice ? 'New from:' + newPrice : ''}}"  verticalAlignment="center" textWrap="true"/>
+                <Label class="text-center" col="1" text="{{ usedPrice ? 'Used from:' + usedPrice : ''}}" verticalAlignment="center"  textWrap="true"/>
             </GridLayout>
+            <Button text="Buy on Amazon" tap="openAmazonUrl" url="{{ detailPageUrl }}" id="amazon-url" />
             <Button text="Add to Favorites" tap="addToBookmarks" visibility="{{ addButtonVisibility }}"  />
             <WebView src="{{ reviewsIFrame }}"/>
         </StackLayout>
