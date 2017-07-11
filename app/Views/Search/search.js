@@ -4,6 +4,7 @@ var view = require('ui/core/view');
 var searchVm = require("../../ViewModels/search-view-model.js");
 var frameModule = require('ui/frame');
 
+
 function onPageLoad (data) {
     var page = data.object;
     console.log("search page loaded");

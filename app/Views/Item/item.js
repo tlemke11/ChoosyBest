@@ -6,6 +6,7 @@ var frameModule = require('ui/frame');
 var storage = require("../../plugins/storage.js");
 var view = require('ui/core/view');
 var utils = require('utils/utils');
+var util = require("../../plugins/utils.js");
 var alreadyLoaded = false;
 var amazonUrl = '';
 function onPageLoad (data) {
@@ -48,8 +49,24 @@ exports.openAmazonUrl = function () {
     utils.openUrl(amazonUrl.url);
 };
 
+exports.removeFromBookmarks = function() {
+    storage.removeFromBookmarks(itemVm.itemViewModel.asin);
+    console.log(itemVm.itemViewModel.asin);
+    itemVm.itemViewModel.set('removeButtonVisibility', 'collapsed');
+    itemVm.itemViewModel.set('addButtonVisibility', 'visible');
+}
+
 //BLOG
 // if you don't wrap the code below in a function, this automatically gets loaded when item.js gets called. This is a
 //common error that I am sure many coders will run into.
 exports.addToBookmarks = function(){
-storage.addToBookmarks(itemVm.itemViewModel.asin, itemVm.itemViewModel.title, itemVm.itemViewModel.smImg)};
+storage.addToBookmarks(itemVm.itemViewModel.asin, itemVm.itemViewModel.title, itemVm.itemViewModel.smImg)
+    itemVm.itemViewModel.set('removeButtonVisibility', 'visible');
+    itemVm.itemViewModel.set('addButtonVisibility', 'collapsed');
+};
+
+
+//Todo - why cant I just call this from the XML? need to remove
+exports.launchAbout = function(){
+    util.launchAbout();
+};

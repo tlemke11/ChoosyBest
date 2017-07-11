@@ -5,6 +5,7 @@ var favsVm = require("../../ViewModels/favorites-view-model.js");
 var view = require('ui/core/view');
 var social = require("../../plugins/social.js");
 var storage = require("../../plugins/storage.js");
+var util = require("../../plugins/utils.js");
 var frameModule = require('ui/frame');
 function onPageLoad (data) {
     var page = data.object;
@@ -50,5 +51,12 @@ exports.loadMainView = function () {
 };
 //ENd Todo
 exports.share = social.share;
+
+
+//Todo - why cant I just call this from the XML? need to remove
+exports.launchAbout = function(){
+    util.launchAbout();
+};
+
 
 exports.onPageLoad = onPageLoad;

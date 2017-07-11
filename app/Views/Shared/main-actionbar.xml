@@ -1,6 +1,6 @@
 <ActionBar>
     <android>
-        <NavigationButton icon="res://ic_menu_black_24dp"/>
+        <NavigationButton icon="res://ic_menu_black_24dp" tap="launchAbout"/>
     </android>
     <ActionBar.actionItems>
         <ActionItem text="Favs" tap="loadMainView" android.systemIcon="ic_menu_star" visibility="collapsed" id="fav-icon"/>

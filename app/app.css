@@ -26,6 +26,11 @@ button {
     /* complementary color #318dff  http://www.colorhexa.com/318dff     and #3c31ff as third color            */
 }
 
+.dark-button {
+    background-color: #318dff;
+    /* complementary color #318dff  http://www.colorhexa.com/318dff     and #3c31ff as third color            */
+}
+
 ActionBar {
     background-color: #ffa331;
 }

@@ -7,6 +7,7 @@ var Observable = require("data/observable").Observable;
 var itemViewModel = new Observable();
 //var frameModule = require('ui/frame');
 var getIt = require("~/plugins/api.js");
+var storage = require("../plugins/storage.js");
 
 //Set the defaults
 itemViewModel.title = "";
@@ -21,9 +22,12 @@ itemViewModel.reviewsIFrame = "";
 itemViewModel.actors = "";
 itemViewModel.rating = "";
 itemViewModel.releaseDate = "";
+itemViewModel.addButtonVisibility = "collapsed";
+itemViewModel.removeButtonVisibility = "collapsed";
+itemViewModel.buyButtonVisibility = "collapsed";
 itemViewModel.upc = "";
 itemViewModel.newPrice = "";
-itemViewModel.usedPrice = ""
+itemViewModel.usedPrice = "";
 itemViewModel.detailPageUrl = "";
 
 console.log("imported the Item View Model");
@@ -122,7 +126,8 @@ function clearModel(){
     itemViewModel.set("upc", "");
     itemViewModel.set("releaseDate", "");
     itemViewModel.set("addButtonVisibility", 'collapsed');
-    itemViewModel.set("addButtonVisibility", 'visible');
+    itemViewModel.set("removeButtonVisibility", 'collapsed');
+    itemViewModel.set("buyButtonVisibility", 'collapsed');
     itemViewModel.set("newPrice",  "");
     itemViewModel.set("usedPrice", "");
     itemViewModel.set("detailPageUrl", "");
@@ -142,7 +147,14 @@ function setModelValues(response){
     itemViewModel.set("rating", response.rating);
     itemViewModel.set("upc", response.upc);
     itemViewModel.set("releaseDate", response.releaseDate);
-    itemViewModel.set("addButtonVisibility", 'visible');
+    if(storage.isInBookmarks(response.asin)){
+        itemViewModel.set("removeButtonVisibility", 'visible');
+        itemViewModel.set("addButtonVisibility", 'collapsed');
+    } else {
+        itemViewModel.set("addButtonVisibility", 'visible');
+        itemViewModel.set("removeButtonVisibility", 'collapsed');
+    }
+    itemViewModel.set("buyButtonVisibility", 'visible');
     itemViewModel.set("disableLoad", 'collapsed');
     itemViewModel.set("newPrice",  response.newPrice);
     itemViewModel.set("usedPrice", response.usedPrice);
